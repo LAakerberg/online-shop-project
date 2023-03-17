@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 /* export function Header() {
   return (
@@ -25,11 +25,11 @@ export function Main() {
     <>
       <main>
         <div>
-        <h1 className="text-3xl">Main content</h1>
+          <h1 className="text-3xl">Main content</h1>
         </div>
       </main>
     </>
-  )
+  );
 }
 
 export function Footer() {
@@ -41,17 +41,15 @@ export function Footer() {
         </div>
       </footer>
     </>
-  )
+  );
 }
 
-
 function App() {
-
   return (
     <>
       <Main />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
