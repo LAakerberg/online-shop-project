@@ -34,12 +34,12 @@
   },
   "lint-staged": {
     "*.js": [
-      "eslint --cache --fix",
-      "prettier --write"
+      "prettier --write",
+      "eslint --cache --fix"
     ],
     "*.jsx": [
-      "eslint --cache --fix",
-      "prettier --write"
+      "prettier --write",
+      "eslint --cache --fix"
     ],
     "*.html": [
       "prettier --write"
