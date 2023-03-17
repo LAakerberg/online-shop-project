@@ -19,3 +19,7 @@ npm install styled-components
 ## Style
 
 ###
+
+### Dependcy
+
+Prettier + ESlint
