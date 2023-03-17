@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+console.log('Intentional Formatting Error');
+
 export function Nav() {
   return (
     <>
