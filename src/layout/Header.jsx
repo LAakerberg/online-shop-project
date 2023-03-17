@@ -3,6 +3,10 @@ import { Link } from 'react-router-dom';
 
 console.log('Intentional Error');
 
+console.log('Intentional Error');
+
+console.log('Intentional Error');
+
 export function Nav() {
   return (
     <>
