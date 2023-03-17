@@ -23,3 +23,4 @@ npm install styled-components
 ### Dependcy
 
 Prettier + ESlint
+Lint-staged
