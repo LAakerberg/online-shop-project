@@ -1,52 +1,9 @@
 import React from 'react';
+import { NavBar } from '../components/navigation/Navbar';
+
 // import { Link } from 'react-router-dom';
 
-console.log('Intentional Formatting Error');
-
-export function Nav() {
-  /*   const [isMenuOpen, setIsMenuOpen] = useState(false)
-  const handleHamburgerClick = () => {
-    setIsMenuOpen(!isMenuOpen)
-  } */
-
-  /*   const hamburgerMenu = document.querySelector('.hamburger-menu');
-  const menuItems = document.querySelector('.menu-items');
-
-  hamburgerMenu.addEventListener('click', () => {
-    hamburgerMenu.classList.toggle('active');
-    menuItems.classList.toggle('active');
-  }); */
-
-  return (
-    <>
-      <div className="">
-        <div className="bg-white h-12 w-11/12 m-auto drop-shadow-lg">
-          <nav className="h-auto">
-            <div className="hamburger-menu">
-              <div className="bar"></div>
-              <div className="bar"></div>
-              <div className="bar"></div>
-            </div>
-            <ul className="menu-items">
-              <li>
-                <a href="#">Home</a>
-              </li>
-              <li>
-                <a href="#">About</a>
-              </li>
-              <li>
-                <a href="#">Services</a>
-              </li>
-              <li>
-                <a href="#">Contact</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-    </>
-  );
-}
+// How to build a responsive hamburger menu in react??
 
 export function Header() {
   return (
@@ -78,8 +35,10 @@ export function Header() {
             </h1>
           </div>
         </div>
-        <div>
-          <Nav />
+        <div className="bg-white drop-shadow-lg">
+          <div className="py-4 w-11/12 m-auto">
+            <NavBar />
+          </div>
         </div>
       </header>
     </>
