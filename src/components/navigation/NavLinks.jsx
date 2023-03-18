@@ -7,7 +7,7 @@ export function NavLinks(props) {
     <>
       <div className={classes.NavBar}>
         <ul className="menu-items">
-          <li>
+          <li onClick={() => props.isMobile && props.closeMobile()}>
             <Link to="/">Home</Link>
           </li>
           <li onClick={() => props.isMobile && props.closeMobile()}>
