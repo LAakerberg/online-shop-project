@@ -1,0 +1,80 @@
+/* Global navbar style */
+
+nav {
+  display: flex;
+  background-color: #fff;
+}
+
+/* li {
+    display: inline-block;
+    padding: 5px;
+  } */
+
+.navbar {
+  display: flex;
+}
+
+.navigation,
+.mobilenavigation {
+  height: 50px;
+  align-items: center;
+}
+
+.navbar nav ul li {
+  display: inline-block;
+  margin: 1.5 vw;
+}
+
+.navbar nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.navbar a:hover {
+  border-bottom: 5px solid #00c898;
+}
+
+/* Styles desktop */
+
+.navigation,
+.navbar,
+.menu-items,
+li {
+  display: inline-block;
+  padding: 5px;
+}
+
+/* Styles Mobile*/
+
+.mobilenavigation {
+  display: none;
+  background-color: lightgrey;
+}
+
+/* Media query */
+
+@media screen {
+}
+
+@media (max-width: 600px) {
+  .navigation {
+    display: none;
+  }
+
+  .mobilenavigation {
+    display: flex;
+    align-items: center;
+  }
+
+  .mobilenavigation .Hamburger {
+    cursor: pointer;
+  }
+  .mobilenavigation,
+  .navbar,
+  .menu-items,
+  li {
+    display: block;
+    padding: 5px;
+    background-color: #fff;
+  }
+}
