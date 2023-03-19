@@ -14,11 +14,11 @@ export function Main() {
     <>
       <main>
         <div className="mx-2">
-          <div className="w-11/12 border m-auto">
+          <div className="w-11/12 m-auto">
             <h1 className="text-3xl">Main content</h1>
           </div>
           <div className="">
-            <div className="w-11/12 border m-auto">
+            <div className="w-11/12 m-auto">
               <Routes>
                 <Route index element={<Home />} />
                 <Route path="products" element={<Products />} />
