@@ -11,24 +11,24 @@ export function Header() {
       <header>
         <div className="bg-color-top">
           <div className="mx-2">
-            <div className="flex flex-row border border-red-100 w-11/12 m-auto space-x-2">
-              <div className="flex-1 border">
+            <div className="flex flex-row w-11/12 m-auto space-x-2">
+              <div className="flex-1">
                 <img src="/src/assets/icons/person_FILL0_wght400_GRAD0_opsz48.svg" />
               </div>
-              <div className="flex-1 border">
+              <div className="flex-1">
                 <img src="/src/assets/icons/location_on_FILL0_wght400_GRAD0_opsz48.svg" />
               </div>
-              <div className="flex-1 border">
+              <div className="flex-1">
                 <img src="/src/assets/icons/call_FILL0_wght400_GRAD0_opsz48.svg" />
               </div>
-              <div className="flex-1 border float-right">
+              <div className="flex-1 float-right">
                 <img src="/src/assets/icons/shopping_cart_FILL0_wght400_GRAD0_opsz48.svg" />
               </div>
             </div>
           </div>
         </div>
         <div className="mx-2">
-          <div className="py-4 w-11/12 border m-auto">
+          <div className="py-4 w-11/12 m-auto">
             <h1 className="logo-title">
               <span className="greenCap">V</span>ision{' '}
               <span className="greenCap">S</span>tore
