@@ -24,3 +24,4 @@ npm install styled-components
 
 Prettier + ESlint
 Lint-staged
+react-icons
