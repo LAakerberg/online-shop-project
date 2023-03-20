@@ -73,7 +73,7 @@ a:hover {
 }
 
 h1 {
-  font-size: 3.2em;
+  font-size: 3.2rem;
   padding: 0px;
   margin: 0px;
 }
@@ -85,11 +85,13 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: #777777;
   cursor: pointer;
   transition: border-color 0.25s;
 }
 button:hover {
+  background-color: #000;
+  color: #f8faff;
   border-color: #646cff;
 }
 button:focus,
