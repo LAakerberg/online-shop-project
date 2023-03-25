@@ -6,7 +6,7 @@ export function NavBar() {
   return (
     <>
       <Navigation />
-      <MobileNavigation />
+      <MobileNavigation className="z-10" />
     </>
   );
 }

@@ -28,8 +28,8 @@ export function Header() {
           </div>
         </div>
         <div className="mx-2">
-          <div className="py-4 w-11/12 m-auto flex">
-            <div>
+          <div className="py-4 w-11/12 m-auto flex flex-col laptop:flex-row">
+            <div className="flex-1 text-center laptop:flex">
               {' '}
               <h1 className="logo-title">
                 <span className="greenCap">V</span>ision{' '}
