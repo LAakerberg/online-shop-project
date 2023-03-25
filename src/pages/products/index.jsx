@@ -1,5 +1,5 @@
 import React from 'react';
-import DataCard from './product';
+import DataCard from '../../components/products/product';
 
 export function Products() {
   return (

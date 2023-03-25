@@ -20,6 +20,10 @@
   }
 }
 
+header {
+  z-index: 10;
+}
+
 @layer base {
   @font-face {
     font-family: Anton;
@@ -47,7 +51,6 @@
 @layer base {
   .logo-title {
     font-family: Anton;
-    font-size: 3.2rem;
     color: #000;
   }
   .greenCap {
@@ -63,7 +66,7 @@ a {
 }
 a:hover {
   color: #535bf2;
-  border-bottom: 2px solid #2f4858;
+  /* border-bottom: 2px solid #2f4858; */
 }
 
 @layer base {
@@ -73,7 +76,22 @@ a:hover {
 }
 
 h1 {
-  font-size: 3.2rem;
+  font-size: 3.4rem;
+}
+h2 {
+  font-size: 2.2rem;
+}
+h3 {
+  font-size: 1.8rem;
+}
+h4 {
+  font-size: 1.6rem;
+}
+h5 {
+  font-size: 1.4rem;
+}
+
+h1 h2 h3 h4 h5 h6 {
   padding: 0px;
   margin: 0px;
 }
