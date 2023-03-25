@@ -4,6 +4,7 @@ import { Home } from './pages/home';
 import { Products } from './pages/products';
 import { About } from './pages/about';
 import { Contact } from './pages/contact';
+import { SpecProducts } from './pages/products/details';
 
 export function RouteNotFound() {
   return <div>Page not found</div>;
@@ -14,16 +15,15 @@ export function Main() {
     <>
       <main>
         <div className="mx-2">
-          <div className="w-11/12 m-auto">
-            <h1 className="text-3xl">Main content</h1>
-          </div>
+          <div className="w-11/12 m-auto py-4"></div>
           <div className="">
             <div className="w-11/12 m-auto">
               <Routes>
                 <Route index element={<Home />} />
-                <Route path="products" element={<Products />} />
-                <Route path="about" element={<About />} />
-                <Route path="contact" element={<Contact />} />
+                <Route path="/products" element={<Products />} />
+                <Route path="/product/details/:id" element={<SpecProducts />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/contact" element={<Contact />} />
                 <Route path="*" element={<RouteNotFound />} />
               </Routes>
             </div>

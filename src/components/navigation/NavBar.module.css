@@ -32,6 +32,7 @@ nav {
 
 .navbar a:hover {
   border-bottom: 5px solid #00c898;
+  border-bottom: 2px solid #2f4858;
 }
 
 /* Styles desktop */

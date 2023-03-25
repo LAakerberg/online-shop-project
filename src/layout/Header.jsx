@@ -28,11 +28,20 @@ export function Header() {
           </div>
         </div>
         <div className="mx-2">
-          <div className="py-4 w-11/12 m-auto">
-            <h1 className="logo-title">
-              <span className="greenCap">V</span>ision{' '}
-              <span className="greenCap">S</span>tore
-            </h1>
+          <div className="py-4 w-11/12 m-auto flex flex-col laptop:flex-row">
+            <div className="flex-1 text-center laptop:flex">
+              {' '}
+              <h1 className="logo-title">
+                <span className="greenCap">V</span>ision{' '}
+                <span className="greenCap">S</span>tore
+              </h1>
+            </div>
+            <div className="text-center justify-center flex-1">
+              <div>
+                <input placeholder="Search product" />
+                <button>Search</button>
+              </div>
+            </div>
           </div>
         </div>
         <div className="bg-white drop-shadow-lg">
