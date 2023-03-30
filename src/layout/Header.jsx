@@ -1,5 +1,7 @@
 import React from 'react';
 import { NavBar } from '../components/navigation/NavBar';
+import Cart from '../assets/icons/shopping_cart_FILL0_wght400_GRAD0_opsz48.svg';
+
 
 // import { Link } from 'react-router-dom';
 
@@ -22,7 +24,7 @@ export function Header() {
                 <img src="/src/assets/icons/call_FILL0_wght400_GRAD0_opsz48.svg" />
               </div>
               <div className="flex-1 float-right">
-                <img src="/src/assets/icons/shopping_cart_FILL0_wght400_GRAD0_opsz48.svg" />
+                <img src={Cart} alt="Shopping cart icon" />
               </div>
             </div>
           </div>
