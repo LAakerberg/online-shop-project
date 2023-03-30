@@ -1,7 +1,6 @@
 import React from 'react';
-import { NavBar } from '../components/navigation/NavBar';
+import { Navbar } from '../components/navigation/Navbar';
 import Cart from '../assets/icons/shopping_cart_FILL0_wght400_GRAD0_opsz48.svg';
-
 
 // import { Link } from 'react-router-dom';
 
@@ -48,7 +47,7 @@ export function Header() {
         </div>
         <div className="bg-white drop-shadow-lg">
           <div className="py-4 w-11/12 m-auto">
-            <NavBar />
+            <Navbar />
           </div>
         </div>
       </header>
