@@ -26,4 +26,6 @@ dist-ssr
 # ESlint
 
 .eslintcache
+.eslintrc.json
+.eslintrc.json
 husky
