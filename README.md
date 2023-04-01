@@ -32,3 +32,9 @@ react-icons
 
 Live page:
 [Vision Store](https://dev-dist--meek-pika-e025e2.netlify.app/product/details/109566af-c5c2-4f87-86cb-76f36fb8d378)
+
+## react-hook-form
+
+### npm install react-hook-form
+
+### npm install @hookform/resolvers yup
