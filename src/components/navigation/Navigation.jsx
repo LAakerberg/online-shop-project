@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLinks } from './NavLinks';
-import classes from './NavBar.module.css';
+import classes from './Navbar.module.css';
 
 export function Navigation() {
   return (

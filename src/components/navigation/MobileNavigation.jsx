@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLinks } from './NavLinks';
-import classes from './NavBar.module.css';
+import classes from './Navbar.module.css';
 import { AiOutlineMenu } from 'react-icons/ai';
 import { AiFillCloseCircle } from 'react-icons/ai';
 import { useState } from 'react';
