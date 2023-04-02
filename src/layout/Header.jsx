@@ -1,6 +1,7 @@
 import React from 'react';
 import { Navbar } from '../components/navigation/Navbar';
 import Cart from '../assets/icons/shopping_cart_FILL0_wght400_GRAD0_opsz48.svg';
+import Profile from '../assets/icons/person_FILL0_wght400_GRAD0_opsz48.svg';
 
 // import { Link } from 'react-router-dom';
 
@@ -13,17 +14,25 @@ export function Header() {
         <div className="bg-color-top">
           <div className="mx-2">
             <div className="flex flex-row w-11/12 m-auto space-x-2">
-              <div className="flex-1">
-                <img src="/src/assets/icons/person_FILL0_wght400_GRAD0_opsz48.svg" />
+              <div className="flex">
+                <img src={Profile} alt="Shopping cart icon" className="icons" />
               </div>
-              <div className="flex-1">
-                <img src="/src/assets/icons/location_on_FILL0_wght400_GRAD0_opsz48.svg" />
+              <div className="flex">
+                <img
+                  src="/src/assets/icons/location_on_FILL0_wght400_GRAD0_opsz48.svg"
+                  alt="Shopping cart icon"
+                  className="icons"
+                />
               </div>
-              <div className="flex-1">
-                <img src="/src/assets/icons/call_FILL0_wght400_GRAD0_opsz48.svg" />
+              <div className="flex">
+                <img
+                  src="/src/assets/icons/call_FILL0_wght400_GRAD0_opsz48.svg"
+                  alt="Shopping cart icon"
+                  className="icons"
+                />
               </div>
-              <div className="flex-1 float-right">
-                <img src={Cart} alt="Shopping cart icon" />
+              <div className="flex flex-1 justify-end">
+                <img src={Cart} alt="Shopping cart icon" className="icons" />
               </div>
             </div>
           </div>
