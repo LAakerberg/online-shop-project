@@ -2,7 +2,7 @@ import React from 'react';
 // import { FetchData } from '../../data/api/apiFetch';
 import useApiData from '../../data/api/apiFetch';
 import { apiUrl } from '../../data/api/apiUrl';
-import * as S from './product.styled';
+import * as S from './product.styles';
 import { Link } from 'react-router-dom';
 
 export function DataCard() {
