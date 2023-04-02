@@ -1,30 +1,36 @@
-## Vite & Tailwind installations guide with React
+# JavaScript Frameworks - Course Assignment
 
-### Hi 2 dsadsd
+## React installed together with TailwindCSS & Vite js.
+
+Clone the project and install the dependency
+
+```
+npm install
+```
+
+To run the product you can use the build in dev server from Vite js.
+
+```
+npm run dev
+```
 
 ## Features
 
-### React router
+- react-router-dom
+- react-icons
+- react-hook-form
+- yup
+- styled-components
+- eslint
+- lint-staged
+- prettier
+- tailwindcss
+- vite
 
-```js
-npm install react-router-dom
-```
-
-### Styled components
-
-```js
-npm install styled-components
-```
-
-## Style
-
-###
-
-### Dependcy
-
-Prettier + ESlint
-Lint-staged
-react-icons
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![ESLint](https://img.shields.io/badge/ESLint-4B3263?style=for-the-badge&logo=eslint&logoColor=white)
+![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
 
 ## Deployed to Netlify
 
@@ -33,11 +39,7 @@ react-icons
 Live page:
 [Vision Store](https://meek-pika-e025e2.netlify.app/)
 
-## react-hook-form
-
-### npm install react-hook-form
-
-### npm install @hookform/resolvers yup
+## Course Assignment - Process
 
 - [x] Create a new CRA app.
 - [x] Create a Header that has a Nav.
@@ -45,10 +47,10 @@ Live page:
 - [x] Create a Footer component.
 - [x] Create a Layout component that has your Header and Footer.
 - [x] Create the other pages:
-  - [x] 6.1 ContactPage
-  - [x] 6.2 ProductPage
-  - [ ] 6.3 CheckoutPage
-  - [ ] 6.4 CheckoutSuccessPage
+  - [x] ContactPage
+  - [x] ProductPage
+  - [ ] CheckoutPage
+  - [ ] CheckoutSuccessPage
 - [x] Add React Router and route to each of the pages. The ProductPage page will be using a dynamic segment.
 - [x] Fetch the list of products on the Homepage and store this as a state.
 - [x] On the homepage, loop through the products and display a Product component for each of the values. This Product component should look like a product card. Each Product component will have a View product button which will link to the ProductPage page.
