@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import useApiData from '../../../data/api/apiFetch';
 import { apiUrl } from '../../../data/api/apiUrl';
 
-import * as S from './fetchProduct.module';
+import * as S from './fetchProduct.styles';
 
 export function SpecificData() {
   const { id } = useParams();

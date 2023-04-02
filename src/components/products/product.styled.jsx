@@ -1,5 +1,8 @@
 import styled from 'styled-components';
 
+// Import Global base button from App.styles
+import { BaseButton } from '../../App.styles';
+
 export const ProductCard = styled.div`
   margin-bottom: 40px;
   display: flex;
@@ -64,18 +67,6 @@ export const ProductButtons = styled.div`
   bottom: 5px;
 `;
 
-export const ViewButton = styled.button`
-  bottom: 4px;
-  text-decoration: none;
-  max-width: 120px;
-  padding: 5px 10px;
-  background-color: #00c898;
-  color: black;
-  border: 1px solid grey;
-  :hover {
-    background-color: #206074;
-    color: #fff;
-    text-decoration: none;
-    outline: none;
-  }
+export const ViewButton = styled(BaseButton)`
+  border-radius: 5px;
 `;

@@ -96,42 +96,46 @@ h1 h2 h3 h4 h5 h6 {
   margin: 0px;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
+/* button {
+  border: 1px solid black;
   padding: 0.6em 1.2em;
   font-size: 1em;
   font-weight: 500;
-  font-family: inherit;
-  background-color: #777777;
+  font-family: Oswald;
+  background-color: #00c898;
   cursor: pointer;
   transition: border-color 0.25s;
 }
 button:hover {
-  background-color: #000;
+  background-color: #ff0000;
   color: #f8faff;
   border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-}
+} */
 
 /* STYLE */
 
 .bg-color-top {
   background-color: #00c898;
+}
+
+/* Styling of contact form */
+
+input[id='contact_form'],
+textarea[id='contact_form'],
+select {
+  min-width: 200px;
+  max-width: 350px;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 4px;
+  margin: 5px;
+}
+
+input[id='contact_form']:hover,
+textarea[id='contact_form']:hover {
+  border-color: #00c898;
+}
+
+textarea {
+  height: 200px;
 }

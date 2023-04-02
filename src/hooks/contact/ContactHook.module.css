@@ -1,0 +1,26 @@
+/* Style hook */
+
+.error_message {
+  color: red;
+  /* border: 1px solid red; */
+}
+
+/* Styling of contact form */
+
+input,
+textarea {
+  min-width: 100px;
+  max-width: 350px;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+input:hover {
+  border-color: brown;
+}
+
+textarea {
+  height: 200px;
+  padding: 20px;
+  margin: 10px;
+}

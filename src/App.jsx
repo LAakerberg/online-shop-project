@@ -2,7 +2,6 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { Home } from './pages/home';
 import { Products } from './pages/products';
-import { About } from './pages/about';
 import { Contact } from './pages/contact';
 import { SpecProducts } from './pages/products/details';
 
@@ -22,7 +21,6 @@ export function Main() {
                 <Route index element={<Home />} />
                 <Route path="/products" element={<Products />} />
                 <Route path="/product/details/:id" element={<SpecProducts />} />
-                <Route path="/about" element={<About />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="*" element={<RouteNotFound />} />
               </Routes>
