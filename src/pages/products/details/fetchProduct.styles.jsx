@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { BaseButton } from '../../../App.styles';
 
 export const ProductContainer = styled.div`
   background-color: #fff;
@@ -13,7 +14,7 @@ export const ProductCard = styled.div`
   flex-direction: column;
   margin: 20px;
   padding: 5px;
-  border: 1px solid green;
+  border: 1px solid black;
   @media (min-width: 800px) {
     flex-direction: row;
   }
@@ -81,7 +82,15 @@ export const ProductPrice = styled.div`
 `;
 
 export const ProductPriceDiscount = styled.div`
-  padding-left: 10px;
+  padding: 0px 10px;
+  font-weight: bold;
+  border: 1px solid black;
+`;
+
+export const AddCartButton = styled(BaseButton)`
+  border-radius: 5px;
+  width: 100%;
+  margin: 5px 0px;
 `;
 
 export const ProductReviewsContainer = styled.div``;

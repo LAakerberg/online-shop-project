@@ -51,7 +51,7 @@ export function SpecificData() {
                 {data.discountedPrice < data.price && data.discountedPrice}
               </S.ProductPriceDiscount>
             </S.ProductPriceContainer>
-            <button>Add to cart</button>
+            <S.AddCartButton>Add to cart</S.AddCartButton>
             <S.ProductTagsContainer>
               <S.ProductTags>
                 <div>Tags: {data.tags}</div>
