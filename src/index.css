@@ -96,21 +96,12 @@ h1 h2 h3 h4 h5 h6 {
   margin: 0px;
 }
 
-/* button {
-  border: 1px solid black;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: Oswald;
-  background-color: #00c898;
-  cursor: pointer;
-  transition: border-color 0.25s;
+/* Icons styles */
+
+.icons {
+  width: 42px;
+  height: 42px;
 }
-button:hover {
-  background-color: #ff0000;
-  color: #f8faff;
-  border-color: #646cff;
-} */
 
 /* STYLE */
 
