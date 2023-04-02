@@ -109,6 +109,28 @@ h1 h2 h3 h4 h5 h6 {
   background-color: #00c898;
 }
 
+/* Search input and button style */
+
+input[id='search_item'] {
+  min-width: 200px;
+  max-width: 350px;
+  border: 2px solid black;
+  border-radius: 5px 0px 0px 5px;
+}
+
+.search_button {
+  background-color: #00c898;
+  border-radius: 0px 5px 5px 0px;
+  border-top: 2px solid black;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+.search_button:hover {
+  background-color: #01f3bb;
+  color: #fff;
+}
+
 /* Styling of contact form */
 
 input[id='contact_form'],
