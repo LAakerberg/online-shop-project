@@ -2,6 +2,9 @@ import React from 'react';
 import { Navbar } from '../components/navigation/Navbar';
 import Cart from '../assets/icons/shopping_cart_FILL0_wght400_GRAD0_opsz48.svg';
 import Profile from '../assets/icons/person_FILL0_wght400_GRAD0_opsz48.svg';
+import Location from '../assets/icons/location_on_FILL0_wght400_GRAD0_opsz48.svg';
+import Call from '../assets/icons/call_FILL0_wght400_GRAD0_opsz48.svg';
+import Search from '../assets/icons/search_FILL0_wght400_GRAD0_opsz48.svg';
 
 // import { Link } from 'react-router-dom';
 
@@ -19,17 +22,13 @@ export function Header() {
               </div>
               <div className="flex">
                 <img
-                  src="/src/assets/icons/location_on_FILL0_wght400_GRAD0_opsz48.svg"
+                  src={Location}
                   alt="Shopping cart icon"
                   className="icons"
                 />
               </div>
               <div className="flex">
-                <img
-                  src="/src/assets/icons/call_FILL0_wght400_GRAD0_opsz48.svg"
-                  alt="Shopping cart icon"
-                  className="icons"
-                />
+                <img src={Call} alt="Shopping cart icon" className="icons" />
               </div>
               <div className="flex flex-1 justify-end">
                 <img src={Cart} alt="Shopping cart icon" className="icons" />
@@ -46,9 +45,17 @@ export function Header() {
                 <span className="greenCap">S</span>tore
               </h1>
             </div>
-            <div className="text-center justify-center flex-1 self-center">
-              <input className="m-auto p-1 w-60" placeholder="Search product" />
-              <button className="hidden">Search</button>
+            <div className="self-center laptop:flex laptop:flex-1">
+              <div className="flex flex-1 m-auto justify-center">
+                <input
+                  id="search_item"
+                  className="m-0 p-1 w-60 h-10"
+                  placeholder="Search product"
+                />
+                <button className="search_button w-10 h-10 m-0">
+                  <img src={Search} alt="Shopping cart icon" className="" />
+                </button>
+              </div>
             </div>
           </div>
         </div>
