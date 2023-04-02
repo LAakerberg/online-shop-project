@@ -39,7 +39,9 @@ npm run dev
 Live page:
 [Vision Store](https://meek-pika-e025e2.netlify.app/)
 
-## Course Assignment - Process
+#
+
+# Course Assignment - Process
 
 - [x] Create a new CRA app.
 - [x] Create a Header that has a Nav.
