@@ -71,3 +71,12 @@ Live page:
   - [x] Submit button
   - [x] console.log the data from the form once validation requirements are met.
 - [x] Once your project is done, deploy it to Netlify.
+
+#
+
+# Features to complete
+
+## Need to complete the CA
+
+- [ ] Shopping cart functionality
+- [ ] Search functionality
