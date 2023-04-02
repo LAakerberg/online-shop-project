@@ -45,15 +45,10 @@ Live page:
 - [ ] Create a Footer component.
 - [ ] Create a Layout component that has your Header and Footer.
 - [ ] Create the other pages:
-
-- [ ] 6.1 ContactPage
-
-- [ ] 6.2 ProductPage
-
-- [ ] 6.3 CheckoutPage
-
-- [ ] 6.4 CheckoutSuccessPage
-
+- - [ ] 6.1 ContactPage
+- - [ ] 6.2 ProductPage
+- - [ ] 6.3 CheckoutPage
+- - [ ] 6.4 CheckoutSuccessPage
 - [ ] Add React Router and route to each of the pages. The ProductPage page will be using a dynamic segment.
       Fetch the list of products on the Homepage and store this as a state.
       On the homepage, loop through the products and display a Product component for each of the values. This Product component should look like a product card. Each Product component will have a View product button which will link to the ProductPage page.
