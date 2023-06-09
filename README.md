@@ -1,36 +1,37 @@
 # JavaScript Frameworks - Course Assignment
 
-## React installed together with TailwindCSS & Vite js.
+## Image
+
+## Descriptions
+
+The Vision Store is a eComm were you can find all kind of products. From clothes, shoes, electronic and much more.
+
+# Installation
 
 Clone the project and install the dependency
+
+1. Clone the repo:
 
 ```
 npm install
 ```
 
-To run the product you can use the build in dev server from Vite js.
+2. To run the product you can use the build in dev server from Vite js.
 
 ```
 npm run dev
 ```
 
-## Features
+# Building
 
-- react-router-dom
-- react-icons
-- react-hook-form
-- yup
-- styled-components
-- eslint
-- lint-staged
-- prettier
-- tailwindcss
-- vite
+- HTML
+- CSS
+- TailwindCSS
+- JavaScript
+- React.js
+- Vite.js
 
-![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
-![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
-![ESLint](https://img.shields.io/badge/ESLint-4B3263?style=for-the-badge&logo=eslint&logoColor=white)
-![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
+[![Tech stack](https://skillicons.dev/icons?i=html,css,tailwindcss,js,react,vite)](https://skillicons.dev)
 
 ## Deployed to Netlify
 
