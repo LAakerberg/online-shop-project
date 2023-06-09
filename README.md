@@ -40,7 +40,12 @@ npm run dev
 Live page:
 [Vision Store](https://meek-pika-e025e2.netlify.app/)
 
-#
+# Contact
+
+Contact me on my social media
+
+[![My socialMedia](https://skillicons.dev/icons?i=github)](https://github.com/LAakerberg)
+[![My socialMedia](https://skillicons.dev/icons?i=linkedin)](https://www.linkedin.com/in/linus-%C3%A5kerberg-4126891b1/)
 
 # Course Assignment - Process
 
