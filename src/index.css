@@ -149,6 +149,11 @@ textarea[id='contact_form']:hover {
   border-color: #00c898;
 }
 
+input[id='contact_form']:checked,
+textarea[id='contact_form']:checked {
+  border-color: #00c898;
+}
+
 textarea {
   height: 200px;
 }
