@@ -12,7 +12,7 @@ const formRules = yup
       .min(3, 'Your first name must be at least XX')
       .max(15, 'Too many character, only 15 character is allowed')
       .required(),
-    lastName: yup.string().min(3).max(10).required(),
+    lastName: yup.string().min(3).required(),
     email: yup
       .string()
       .email()
@@ -86,10 +86,7 @@ export function FormHook() {
         />
         <p className={styles.error_message}>{errors.body?.message}</p>
         <label>Choose subject</label>
-        <select
-          {...register('Subject')}
-          className="border border-red-400 rounded-md p-1 m-1"
-        >
+        <select {...register('Subject')} className="rounded-md p-1 m-1">
           <option value="return">Return</option>
           <option value="shipment">Shipment</option>
           <option value="feedback">Feedback</option>
@@ -98,7 +95,7 @@ export function FormHook() {
           <div>
             <button
               type="submit"
-              className="global_button btn_submit uppercase"
+              className="global_button btn_submit uppercase font-bold"
             >
               Send
             </button>
@@ -108,7 +105,7 @@ export function FormHook() {
             <button
               type="button"
               onClick={handleReset}
-              className="global_button btn_reset uppercase"
+              className="global_button btn_reset uppercase font-bold"
             >
               reset
             </button>
