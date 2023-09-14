@@ -1,0 +1,38 @@
+/* Global buttons */
+
+.global_button {
+  bottom: 4px;
+  text-decoration: none;
+  min-width: 100px;
+  max-width: 120px;
+  padding: 5px 10px;
+  background-color: #00c898;
+  color: #000000;
+  border: 1px solid grey;
+  border-radius: 5px;
+
+  &:hover {
+    background-color: #206074;
+    color: #fff;
+    text-decoration: none;
+    outline: none;
+  }
+}
+
+.btn_submit {
+  background-color: #058164;
+  color: #fff;
+  &:hover {
+    background-color: #00c898;
+    color: #fff;
+  }
+}
+
+.btn_reset {
+  background-color: #742020;
+  color: #fff;
+
+  &:hover {
+    background-color: #aa3131;
+  }
+}

@@ -94,10 +94,26 @@ export function FormHook() {
           <option value="shipment">Shipment</option>
           <option value="feedback">Feedback</option>
         </select>
-        <button type="button" onClick={handleReset}>
-          reset
-        </button>
-        <button type="submit">Send</button>
+        <div className="flex flex-row justify-between w-60 pt-5">
+          <div>
+            <button
+              type="submit"
+              className="global_button btn_submit uppercase"
+            >
+              Send
+            </button>
+          </div>
+          <div>
+            {' '}
+            <button
+              type="button"
+              onClick={handleReset}
+              className="global_button btn_reset uppercase"
+            >
+              reset
+            </button>
+          </div>
+        </div>
       </div>
     </form>
   );
