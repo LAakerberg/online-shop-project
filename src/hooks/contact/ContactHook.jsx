@@ -2,17 +2,19 @@ import React from 'react';
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
-import styles from './ContactHook.module.css';
 /* import { useHistory } from 'react-router-dom'; */
 
 const formRules = yup
   .object({
     firstName: yup
       .string()
-      .min(3, 'Your first name must be at least XX')
+      .min(3, 'Your first name must be at least 3 char')
       .max(15, 'Too many character, only 15 character is allowed')
       .required(),
-    lastName: yup.string().min(3).required(),
+    lastName: yup
+      .string()
+      .min(3, 'Your last name must be at least 3 char')
+      .required(),
     email: yup
       .string()
       .email()
@@ -62,21 +64,21 @@ export function FormHook() {
           placeholder="Your first name"
           id="contact_form"
         />
-        <p className={styles.error_message}>{errors.firstName?.message}</p>
+        <p className="error_message">{errors.firstName?.message}</p>
         <label>Your last name</label>
         <input
           {...register('lastName')}
           placeholder="Your last name"
           id="contact_form"
         />
-        <p className={styles.error_message}>{errors.lastName?.message}</p>
+        <p className="error_message">{errors.lastName?.message}</p>
         <label>Your email</label>
         <input
           {...register('email')}
           placeholder="your.mail@hotmail.com"
           id="contact_form"
         />
-        <p className={styles.error_message}>{errors.email?.message}</p>
+        <p className="error_message">{errors.email?.message}</p>
         <label>Description</label>
         <textarea
           {...register('body')}
@@ -84,7 +86,7 @@ export function FormHook() {
           placeholder="Describe your problem"
           id="contact_form"
         />
-        <p className={styles.error_message}>{errors.body?.message}</p>
+        <p className="error_message">{errors.body?.message}</p>
         <label>Choose subject</label>
         <select {...register('Subject')} className="rounded-md p-1 m-1">
           <option value="return">Return</option>

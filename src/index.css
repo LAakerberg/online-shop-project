@@ -160,3 +160,8 @@ select {
 textarea {
   height: 200px;
 }
+
+.error_message {
+  color: red;
+  /* border: 1px solid red; */
+}
