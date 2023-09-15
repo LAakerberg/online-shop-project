@@ -150,10 +150,10 @@ select {
   padding: 4px;
   margin: 5px;
   &:hover {
-    border: solid #00c898;
+    border: 2px solid #00c898;
   }
   &:focus {
-    border: solid #00c898;
+    border: 2px solid #00c898;
   }
 }
 
