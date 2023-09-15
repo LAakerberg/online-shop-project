@@ -1,5 +1,5 @@
 import React from 'react';
-import { Navbar } from '../components/navigation/Navbar';
+import { Navbar } from './navigation/Navbar';
 import Cart from '../assets/icons/shopping_cart_FILL0_wght400_GRAD0_opsz48.svg';
 import Profile from '../assets/icons/person_FILL0_wght400_GRAD0_opsz48.svg';
 import Location from '../assets/icons/location_on_FILL0_wght400_GRAD0_opsz48.svg';
