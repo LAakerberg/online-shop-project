@@ -30,6 +30,10 @@ header {
   z-index: 10;
 }
 
+footer {
+  background-color: #2f4858;
+}
+
 @layer base {
   @font-face {
     font-family: Anton;
