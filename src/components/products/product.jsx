@@ -22,33 +22,66 @@ export function DataCard() {
         <h2>Products</h2>
       </div>
       <div className="sm:w-11/12 desktop2xl:w-9/12 m-auto grid mobile:grid-cols-1 tablet:grid-cols-2 laptop:grid-cols-3 desktop:grid-cols-4 desktop1xl:grid-cols-5 desktop2xl:grid-cols-6 gap-4">
-        {data.map((dataName) => (
-          <S.ProductCard key={dataName.id}>
-            <S.ProductImage>
-              <S.ProductImg src={dataName.imageUrl}></S.ProductImg>
-            </S.ProductImage>
-            <S.ProductContent>
-              <S.ProductTitle>
-                <h3 className="text-xl">{dataName.title}</h3>
-              </S.ProductTitle>
-              <S.ProductDescription>
-                {/* {dataName.description} */}
-              </S.ProductDescription>
-              <S.ProductCost>
-                <S.ProductPrice>{dataName.price}</S.ProductPrice>
-                <S.ProductDiscountPrice>
-                  {dataName.discountedPrice < dataName.price &&
-                    dataName.discountedPrice}
-                </S.ProductDiscountPrice>
-              </S.ProductCost>
-              <S.ProductButtons>
-                <Link to={`/product/details/${dataName.id}`}>
-                  <S.ViewButton>View more</S.ViewButton>
-                </Link>
-              </S.ProductButtons>
-            </S.ProductContent>
-          </S.ProductCard>
-        ))}
+        {data.map((dataName) => {
+          const discountPercentage = Math.round(
+            ((dataName.price - dataName.discountedPrice) / dataName.price) * 100
+          );
+
+          return (
+            <S.ProductCard key={dataName.id}>
+              <S.ProductImage style={{ position: 'relative' }}>
+                {dataName.discountedPrice < dataName.price && (
+                  <div
+                    style={{
+                      position: 'absolute',
+                      top: 0,
+                      left: 0,
+                      background: 'rgba(155, 0, 0, 0.5)',
+                      color: 'white',
+                      transform: 'rotate(0deg)',
+                      borderRadius: '10px 10px 0px 0px',
+                      padding: '0px 5px',
+                      width: '100%',
+                      filter: 'blur(0px)',
+                    }}
+                  >
+                    {`${discountPercentage}% OFF`}
+                  </div>
+                )}
+                <S.ProductImg src={dataName.imageUrl}></S.ProductImg>
+              </S.ProductImage>
+              <S.ProductContent>
+                <S.ProductTitle>
+                  <h3 className="text-xl">{dataName.title}</h3>
+                </S.ProductTitle>
+                <S.ProductDescription>
+                  {/* {dataName.description} */}
+                </S.ProductDescription>
+                <S.ProductCost>
+                  {dataName.discountedPrice < dataName.price ? (
+                    <>
+                      <S.ProductDiscountPrice>
+                        {dataName.discountedPrice}
+                      </S.ProductDiscountPrice>
+                      <S.ProductPrice
+                        style={{ textDecoration: 'line-through' }}
+                      >
+                        {dataName.price}
+                      </S.ProductPrice>
+                    </>
+                  ) : (
+                    <S.ProductPrice>{dataName.price}</S.ProductPrice>
+                  )}
+                </S.ProductCost>
+                <S.ProductButtons>
+                  <Link to={`/product/details/${dataName.id}`}>
+                    <S.ViewButton>View more</S.ViewButton>
+                  </Link>
+                </S.ProductButtons>
+              </S.ProductContent>
+            </S.ProductCard>
+          );
+        })}
       </div>
     </>
   );

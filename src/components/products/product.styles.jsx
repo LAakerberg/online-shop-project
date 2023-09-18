@@ -47,12 +47,14 @@ export const ProductCost = styled.div`
 
 export const ProductPrice = styled.div`
   flex-grow: 1;
+  /* text-decoration: line-through; */
 `;
 
 export const ProductDiscountPrice = styled.div`
   flex-grow: 1;
   font-weight: bold;
   font-size: large;
+  color: red;
 `;
 
 export const ProductButtons = styled.div`
