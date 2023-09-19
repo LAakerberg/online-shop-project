@@ -31,20 +31,7 @@ export function DataCard() {
             <S.ProductCard key={dataName.id}>
               <S.ProductImage style={{ position: 'relative' }}>
                 {dataName.discountedPrice < dataName.price && (
-                  <div
-                    style={{
-                      position: 'absolute',
-                      top: 0,
-                      left: 0,
-                      background: 'rgba(155, 0, 0, 0.5)',
-                      color: 'white',
-                      transform: 'rotate(0deg)',
-                      borderRadius: '10px 10px 0px 0px',
-                      padding: '0px 5px',
-                      width: '100%',
-                      filter: 'blur(0px)',
-                    }}
-                  >
+                  <div className="sales_container">
                     {`${discountPercentage}% OFF`}
                   </div>
                 )}
