@@ -3,8 +3,6 @@ import { useParams } from 'react-router-dom';
 import useApiData from '../../../data/api/apiFetch';
 import { apiUrl } from '../../../data/api/apiUrl';
 
-import * as S from './fetchProduct.styles';
-
 export function SpecificData() {
   const { id } = useParams();
   const { data, isLoading, isError } = useApiData(apiUrl + id);
@@ -18,52 +16,48 @@ export function SpecificData() {
   }
 
   return (
-    <>
-      <div className="sm:w-11/12 desktop2xl:w-9/12 m-auto grid mobile:grid-cols-1 tablet:grid-cols-2 laptop:grid-cols-3 desktop:grid-cols-4 desktop1xl:grid-cols-5 desktop2xl:grid-cols-6 gap-4"></div>
-      <S.ProductContainer className="drop-shadow-lg">
-        <h2>Product</h2>
-        <p>Product ID: {id}</p>
-        <S.ProductCard>
-          <S.ProductStaticData>
-            <S.ProductTitleContainer>
-              <S.ProductTitle>
-                <h2>{data.title}</h2>
-              </S.ProductTitle>
-            </S.ProductTitleContainer>
-            <S.ProductImgContainer>
-              <S.ProductImg src={data.imageUrl}></S.ProductImg>
-            </S.ProductImgContainer>
-            <S.ProductBodyContainer>
-              <S.ProductBody>
+    <div className="sm:w-11/12 desktop2xl:w-9/12 m-auto border">
+      <div className="bg-white border border-black rounded-md w-full py-2 px-1">
+        <div className="border-b border-black">
+          <h2>{data.title}</h2>
+          <p className="italic">Product ID: {id}</p>
+        </div>
+        <div>
+          <div className="flex px-1">
+            <div className="flex-1">
+              <div className="p-1">
+                <img src={data.imageUrl} className="object-cover w-full h-96" />
+              </div>
+              <div className="p-1">
+                <h4 className="underline underline-offset-4">Descriptions</h4>
                 <p>{data.description}</p>
-              </S.ProductBody>
-            </S.ProductBodyContainer>
-          </S.ProductStaticData>
-          <S.ProductDataContainer>
-            <S.ProductRatingContainer>
-              <S.ProductRating>Rating: {data.rating} of 5</S.ProductRating>
-            </S.ProductRatingContainer>
-            <S.ProductPriceContainer>
-              <S.ProductPrice>
-                <p>Price: {data.price}</p>
-              </S.ProductPrice>
-              <S.ProductPriceDiscount>
-                {data.discountedPrice < data.price && data.discountedPrice}
-              </S.ProductPriceDiscount>
-            </S.ProductPriceContainer>
-            <S.AddCartButton>Add to cart</S.AddCartButton>
-            <S.ProductTagsContainer>
-              <S.ProductTags>
-                <div>Tags: {data.tags}</div>
-              </S.ProductTags>
-            </S.ProductTagsContainer>
-            <S.ProductReviewsContainer>
-              <S.ProductReviews>Reviews (2)</S.ProductReviews>
-              <S.ProductReviewsComment>Read comments</S.ProductReviewsComment>
-            </S.ProductReviewsContainer>
-          </S.ProductDataContainer>
-        </S.ProductCard>
-      </S.ProductContainer>
-    </>
+              </div>
+              <div className="p-2">
+                <p className="font-bold italic">Tags: {data.tags}</p>
+              </div>
+            </div>
+            <div className="flex-initial w-48 border-l border-black p-1">
+              <div className="flex flex-col justify-between h-full">
+                <div className="">
+                  <ul className="product_item">
+                    <li className="product_item">Price: {data.price}</li>
+                    <li className="product_item">
+                      Sales:{' '}
+                      {data.discountedPrice < data.price &&
+                        data.discountedPrice}
+                    </li>
+                    <li className="product_item">Rating</li>
+                    <li className="product_item">Reviews</li>
+                  </ul>
+                </div>
+                <div className="w-full">
+                  <button className="global_button w-full">Add to cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 }
