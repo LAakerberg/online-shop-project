@@ -185,3 +185,9 @@ textarea {
   width: 100%;
   filter: blur(0px);
 }
+
+li.product_item {
+  display: block;
+  text-decoration: none;
+  padding: 0;
+}
