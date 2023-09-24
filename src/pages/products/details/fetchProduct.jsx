@@ -16,7 +16,7 @@ export function SpecificData() {
   }
 
   return (
-    <div className="sm:w-11/12 desktop2xl:w-9/12 m-auto border">
+    <div className="sm:w-11/12 desktop2xl:w-9/12 m-auto border pb-2">
       <div className="bg-white border border-black rounded-md w-full py-2 px-1">
         <div className="border-b border-black">
           <h2>{data.title}</h2>
