@@ -7,11 +7,11 @@ export const ProductCard = styled.div`
   margin-bottom: 40px;
   display: flex;
   flex-direction: column;
-  width: 200px;
+  min-width: 210px;
   max-width: 230px;
   height: 300px;
   background-color: #fff;
-  border-radius: 10px 10px 0px 0px;
+  border-radius: 10px 10px 5px 5px;
   filter: drop-shadow(1px 1px 6px rgb(0 0 0 / 0.5));
 `;
 
@@ -33,7 +33,7 @@ export const ProductContent = styled.div`
   display: flex;
   flex: 1;
   flex-direction: column;
-  position: relative;
+  margin: 0px 2px;
 `;
 
 export const ProductTitle = styled.div``;
