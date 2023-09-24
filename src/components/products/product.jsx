@@ -18,10 +18,10 @@ export function DataCard() {
 
   return (
     <>
-      <div>
+      <div className="py-1">
         <h2>Products</h2>
       </div>
-      <div className="sm:w-11/12 desktop2xl:w-9/12 m-auto grid mobile:grid-cols-1 tablet:grid-cols-2 laptop:grid-cols-3 desktop:grid-cols-4 desktop1xl:grid-cols-5 desktop2xl:grid-cols-6 gap-4">
+      <div className="sm:w-11/12 desktop2xl:w-9/12 grid justify-items-center mobile:grid-cols-1 tablet:grid-cols-2 laptop:grid-cols-3 desktop:grid-cols-4 desktop1xl:grid-cols-5 desktop2xl:grid-cols-6 gap-4">
         {data.map((dataName) => {
           const discountPercentage = Math.round(
             ((dataName.price - dataName.discountedPrice) / dataName.price) * 100
