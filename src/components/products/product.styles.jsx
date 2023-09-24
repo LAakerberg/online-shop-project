@@ -7,6 +7,7 @@ export const ProductCard = styled.div`
   margin-bottom: 40px;
   display: flex;
   flex-direction: column;
+  width: 200px;
   max-width: 230px;
   height: 300px;
   background-color: #fff;
