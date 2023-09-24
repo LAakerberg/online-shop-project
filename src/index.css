@@ -169,3 +169,25 @@ textarea {
   color: red;
   /* border: 1px solid red; */
 }
+
+.sales_container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(155, 0, 0, 0.6);
+  color: white;
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: large;
+  transform: rotate(0deg);
+  border-radius: 10px 10px 0px 0px;
+  padding: 0px 5px;
+  width: 100%;
+  filter: blur(0px);
+}
+
+li.product_item {
+  display: block;
+  text-decoration: none;
+  padding: 0;
+}
