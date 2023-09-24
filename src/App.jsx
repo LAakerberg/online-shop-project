@@ -11,24 +11,17 @@ export function RouteNotFound() {
 
 export function Main() {
   return (
-    <>
-      <main>
-        <div className="mx-2">
-          <div className="w-11/12 m-auto py-4"></div>
-          <div className="">
-            <div className="w-11/12 m-auto">
-              <Routes>
-                <Route index element={<Home />} />
-                <Route path="/products" element={<Products />} />
-                <Route path="/product/details/:id" element={<SpecProducts />} />
-                <Route path="/contact" element={<Contact />} />
-                <Route path="*" element={<RouteNotFound />} />
-              </Routes>
-            </div>
-          </div>
-        </div>
-      </main>
-    </>
+    <main className="p-4">
+      <div className="p-2 w-11/12 m-auto">
+        <Routes>
+          <Route index element={<Home />} />
+          <Route path="/products" element={<Products />} />
+          <Route path="/product/details/:id" element={<SpecProducts />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<RouteNotFound />} />
+        </Routes>
+      </div>
+    </main>
   );
 }
 
