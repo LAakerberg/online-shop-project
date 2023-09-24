@@ -42,6 +42,7 @@ export function DataCard() {
                   <h3 className="text-xl">{dataName.title}</h3>
                 </S.ProductTitle>
                 <S.ProductDescription>
+                  <p>{dataName.description}</p>
                   {/* {dataName.description} */}
                 </S.ProductDescription>
                 <S.ProductCost>
@@ -60,11 +61,13 @@ export function DataCard() {
                     <S.ProductPrice>{dataName.price}</S.ProductPrice>
                   )}
                 </S.ProductCost>
-                <S.ProductButtons>
-                  <Link to={`/product/details/${dataName.id}`}>
-                    <S.ViewButton>View more</S.ViewButton>
-                  </Link>
-                </S.ProductButtons>
+                <div className="flex m-auto items-end">
+                  <S.ProductButtons className="">
+                    <Link to={`/product/details/${dataName.id}`}>
+                      <S.ViewButton>View more</S.ViewButton>
+                    </Link>
+                  </S.ProductButtons>
+                </div>
               </S.ProductContent>
             </S.ProductCard>
           );

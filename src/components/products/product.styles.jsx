@@ -9,7 +9,7 @@ export const ProductCard = styled.div`
   flex-direction: column;
   min-width: 210px;
   max-width: 230px;
-  height: 300px;
+  height: 380px;
   background-color: #fff;
   border-radius: 10px 10px 5px 5px;
   filter: drop-shadow(1px 1px 6px rgb(0 0 0 / 0.5));
@@ -44,6 +44,8 @@ export const ProductDescription = styled.div`
 
 export const ProductCost = styled.div`
   display: flex;
+  height: 60px;
+  align-items: center;
 `;
 
 export const ProductPrice = styled.div`
@@ -66,7 +68,6 @@ export const ProductButtons = styled.div`
   justify-self: center;
   align-content: center;
   align-self: center;
-  position: absolute;
   bottom: 5px;
 `;
 
