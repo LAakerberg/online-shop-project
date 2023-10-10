@@ -4,6 +4,7 @@ import { Home } from './pages/home';
 import { Products } from './pages/products';
 import { Contact } from './pages/contact';
 import { SpecProducts } from './pages/products/details';
+import { Cart } from './pages/cart';
 
 export function RouteNotFound() {
   return <div>Page not found</div>;
@@ -18,6 +19,7 @@ export function Main() {
           <Route path="/products" element={<Products />} />
           <Route path="/product/details/:id" element={<SpecProducts />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/cart" element={<Cart />} />
           <Route path="*" element={<RouteNotFound />} />
         </Routes>
       </div>
