@@ -1,5 +1,4 @@
 import React from 'react';
-// import { FetchData } from '../../data/api/apiFetch';
 import useApiData from '../../data/api/apiFetch';
 import { apiUrl } from '../../data/api/apiUrl';
 import { Link } from 'react-router-dom';
