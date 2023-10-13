@@ -1,24 +1,18 @@
-import * as S from './index.styles';
-
-function FormInput() {
+function CartContainer() {
   return (
-    <>
-      <S.FormContainer>
-        <S.InputContainer className="p-2">
-          <div>Hello</div>
-        </S.InputContainer>
-        <S.InfoContainer className="p-2"></S.InfoContainer>
-      </S.FormContainer>
-    </>
+    <div className="bg-white border border-gray-600 rounded-md mb-5 p-1 flex flex-col">
+      <div className="max-w-lg flex flex-col p-2">Shopping cart is empty</div>
+      <div className="flex flex-col p-2">hej</div>
+    </div>
   );
 }
 
 export function Cart() {
   return (
     <div>
-      <h3>This is the cart</h3>
+      <h3>Shopping cart</h3>
       <div>
-        <FormInput />
+        <CartContainer />
       </div>
     </div>
   );

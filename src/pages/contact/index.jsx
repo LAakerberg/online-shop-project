@@ -1,17 +1,14 @@
 import React from 'react';
-import * as S from './index.styles';
 import { FormHook } from '../../hooks/contact/ContactHook';
 
 function FormInput() {
   return (
-    <>
-      <S.FormContainer>
-        <S.InputContainer className="p-2">
-          <FormHook className="" />
-        </S.InputContainer>
-        <S.InfoContainer className="p-2"></S.InfoContainer>
-      </S.FormContainer>
-    </>
+    <div className="bg-white border border-gray-600 rounded-md mb-5 p-1 flex flex-col">
+      <div className="max-w-lg flex flex-col p-2">
+        <FormHook className="" />
+      </div>
+      <div className="flex flex-col p-2"></div>
+    </div>
   );
 }
 
