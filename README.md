@@ -1,6 +1,7 @@
-# JavaScript Frameworks - Course Assignment
+# JavaScript Frameworks - Course Assignment updae
 
 ## Image
+
 ![visionStoreScreenshootHigh](https://github.com/LAakerberg/online-shop-project/assets/44141432/005a1141-a642-4c57-839c-d19f41e19435)
 
 ## Descriptions
