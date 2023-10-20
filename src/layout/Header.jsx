@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Navbar } from './navigation/Navbar';
 import Cart from '../assets/icons/shopping_cart_FILL0_wght400_GRAD0_opsz48.svg';
 import Profile from '../assets/icons/person_FILL0_wght400_GRAD0_opsz48.svg';
@@ -10,7 +11,7 @@ import Search from '../assets/icons/search_FILL0_wght400_GRAD0_opsz48.svg';
 
 // How to build a responsive hamburger menu in react??
 
-export function Header() {
+export function Header(props) {
   return (
     <>
       <header>
@@ -31,7 +32,15 @@ export function Header() {
                 <img src={Call} alt="Shopping cart icon" className="icons" />
               </div>
               <div className="flex flex-1 justify-end">
-                <img src={Cart} alt="Shopping cart icon" className="icons" />
+                <li onClick={() => props.isMobile && props.closeMobile()}>
+                  <Link to="/cart">
+                    <img
+                      src={Cart}
+                      alt="Shopping cart icon"
+                      className="icons"
+                    />
+                  </Link>
+                </li>
               </div>
             </div>
           </div>
